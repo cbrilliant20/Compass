@@ -80,6 +80,16 @@ https://whimsical.com/compass-BhJ6Eo5FX7HduXwbuMU3GV
 
 https://drive.google.com/file/d/1rTTJjTtk24KgHG_2kAMT81wvHILBkx9d/view?usp=sharing
 
+# Libraies and Dependecies
+
+|     Library      | 
+| :--------------: | 
+|      React       | 
+|   React Router   | 
+|      Axios       |
+|      Ruby        |
+|      Rails       |
+
 # MVP
 
 1. Create a RESTful JSON API using Ruby on Rails server
