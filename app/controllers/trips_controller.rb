@@ -1,5 +1,7 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:index, :show, :create, :update, :destroy]
+
 
   # GET /trips
   def index
@@ -39,12 +41,10 @@ class TripsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_trip
       @trip = Trip.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def trip_params
       params.require(:trip).permit(:name, :location, :date_start, :date_end, :img_url, :user_id)
     end
