@@ -11,7 +11,7 @@ class ItinerariesController < ApplicationController
 
   def create
     @itinerary = Itinerary.new(itinerary_params)
-    @itinerary.user = @current_user
+    # @itinerary.user = @current_user
 
     if @itinerary.save
       render json: @itinerary, status: :created
