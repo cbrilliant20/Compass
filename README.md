@@ -11,7 +11,6 @@ Compass is a travel planning app built with React, Ruby, Rails and MongoDB. User
 3.  RESTful JSON API
 4.  Media queries
 
-
 # Goals
 
 1.  Achieve all goals in MVP
@@ -72,7 +71,7 @@ end
 
 https://www.figma.com/file/EnfS1Msu0QuNLHuUW73Xq4/Untitled?node-id=0%3A1
 
-# Component Hierarchy 
+# Component Hierarchy
 
 https://whimsical.com/compass-BhJ6Eo5FX7HduXwbuMU3GV
 
@@ -82,13 +81,13 @@ https://drive.google.com/file/d/1rTTJjTtk24KgHG_2kAMT81wvHILBkx9d/view?usp=shari
 
 # Libraies and Dependecies
 
-|     Library      | 
-| :--------------: | 
-|      React       | 
-|   React Router   | 
-|      Axios       |
-|      Ruby        |
-|      Rails       |
+|   Library    |
+| :----------: |
+|    React     |
+| React Router |
+|    Axios     |
+|     Ruby     |
+|    Rails     |
 
 # MVP
 
@@ -106,3 +105,20 @@ https://drive.google.com/file/d/1rTTJjTtk24KgHG_2kAMT81wvHILBkx9d/view?usp=shari
 1. Google calander integration
 2. Travel resources page
 3. Integrate Open Weather API
+
+# Time Estimates
+
+| Task                | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Controllerss        |    H     |     2 hrs      |      TBD      |     TBD     |
+| Migrations          |    H     |     2 hrs      |      TBD      |     TBD     |
+| Models              |    H     |     2 hrs      |      TBD      |     TBD     |
+| BE Route            |    H     |     2 hrs      |      TBD      |     TBD     |
+| Component Structure |    H     |     1 hrs      |      TBD      |     TBD     |
+| Screens             |    H     |     8 hrs      |      TBD      |     TBD     |
+| Forms               |    H     |     4 hrs      |      TBD      |     TBD     |
+| API Calls           |    H     |     4 hrs      |      TBD      |     TBD     |
+| FE Routes           |    H     |     3 hrs      |      TBD      |     TBD     |
+| Resources           |    H     |     3 hrs      |      TBD      |     TBD     |
+| CSS                 |    H     |     8 hrs      |      TBD      |     TBD     |
+| TOTAL               |          |     39 hrs     |      TBD      |     TBD     |
