@@ -1,10 +1,9 @@
 class AuthenticationController < ApplicationController
   before_action :authorize_request, except: :login
 
-  # POST /auth/login
   def login
     @user = User.find_by(username: login_params[:username])
-    if @user.authenticate(login_params[:password]) #authenticate method provided by Bcrypt and 'has_secure_password'
+    if @user.authenticate(login_params[:password]) 
       token = encode({id: @user.id})
       render json: {
         user: @user.attributes.except("password_digest"),
@@ -15,11 +14,9 @@ class AuthenticationController < ApplicationController
     end
   end
   
-  # GET /auth/verify
   def verify
     render json: @current_user.attributes.except("password_digest"), status: :ok
   end
-
 
   private
 
