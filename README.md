@@ -33,7 +33,11 @@ Compass is a travel planning app built with React, Ruby, Rails and MongoDB. User
 
 # Wireframe
 
+https://www.figma.com/file/EnfS1Msu0QuNLHuUW73Xq4/Untitled?node-id=0%3A1
+
 # Whimsical Diagram
+
+
 
 # MVP
 
