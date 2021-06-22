@@ -2,7 +2,7 @@
 
 # Overview
 
-Compass is a travel planning app built with React, Ruby, Rails and MongoDB. Users can create, update and delete account specific trips and iteneraries.
+Compass is a travel planning app built with React, Ruby, Rails and PostgreSQL. Users can create, update and delete account specific trips and iteneraries.
 
 # Features
 
