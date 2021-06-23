@@ -9,6 +9,10 @@ import {
 } from './services/auth';
 import Layout from './components/Layout/Layout';
 import Landing from './screens/Landing/Landing';
+import Trips from "./screens/Trips/Trips"
+import TripDetails from "./screens/TripDetails/TripDetails"
+import Resources from './screens/Resources/Resources';
+import SignIn from './screens/SignIn/SignIn';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -43,12 +47,21 @@ removeToken();
   return (
     <div className="App">
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Landing/>
         </Route>
-        {/* <Route path="/home">
-          <Layout/>
-        </Route> */}
+        <Route exact path="/trips">
+          <Trips />
+        </Route>
+        <Route exact path="/trips/:id">
+          <TripDetails currentUser={currentUser}/>
+        </Route>
+        <Route exact path="/sign-in">
+          <SignIn setCurrentUser={setCurrentUser} handleLogin={handleLogin} handleRegister={handleRegister}/>
+        </Route>
+        <Route exact path="/resources">
+          <Resources />
+        </Route>
         </Switch>
     </div>
   );

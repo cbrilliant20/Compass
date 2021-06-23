@@ -11,9 +11,9 @@ const Landing = () => {
     <div className="landing-page">
      <div className="landing-header">
       <div className="landing-logo">
-        <FontAwesomeIcon className="logo-icon" icon={faDraftingCompass} />
-        <h1>COMPASS</h1>
-      </div>
+          <FontAwesomeIcon className="logo-icon" icon={faDraftingCompass} />
+          <h1>COMPASS</h1>
+        </div>
       </div>
       <video className="video" muted loop autoPlay >
         <source src={coast} type="video/mp4" />
