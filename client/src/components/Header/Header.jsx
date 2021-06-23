@@ -25,7 +25,7 @@ const Header = () => {
       </Link>
       <div className="burger">
         <FontAwesomeIcon
-          className="svg-inline--fa fa-bars fa-w-20 burger-icon"
+          className="burger-icon"
           icon={faBars}
           onClick={() => setShowMenu(!showMenu)}
         />

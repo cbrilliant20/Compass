@@ -25,4 +25,26 @@ header a {
   width: 40px !important;
 }
 
+.burger {
+  margin-right: 50px;
+}
+
+.burger-icon {
+  width: 30px !important;
+  height: 40px;
+  position: static;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  height: 500px;
+  background-color: blanchedalmond;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
