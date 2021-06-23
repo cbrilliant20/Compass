@@ -8,6 +8,7 @@ import {
 	removeToken,
 } from './services/auth';
 import Layout from './components/Layout/Layout';
+import Landing from './screens/Landing/Landing';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -41,9 +42,14 @@ removeToken();
   
   return (
     <div className="App">
-      <Layout currentUser={currentUser} handleLogout={handleLogout}>
-        
-      </Layout>
+        <Switch>
+          <Route path="/">
+            <Landing/>
+        </Route>
+        {/* <Route path="/home">
+          <Layout/>
+        </Route> */}
+        </Switch>
     </div>
   );
 }

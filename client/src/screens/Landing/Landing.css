@@ -1,0 +1,66 @@
+.landing-page{
+  color: white;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 80%;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #6a6a6a;
+  mix-blend-mode: overlay;
+  z-index: -1;
+}
+
+.landing-header {
+  background-color: none;
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 50px;
+  height: 70px;
+}
+
+.landing-logo * {
+  margin-right: 20px ;
+}
+
+.content {
+  /* background-color: black; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 50%;
+  margin: 130px 50px;
+  text-align: left;
+}
+
+.content h2, .content h3, .content button {
+  margin-top: 30px;
+}
+
+.content h2{
+  font-size: 60px;
+}
+
+.content button {
+  width: 200px;
+  height: 50px;
+}
