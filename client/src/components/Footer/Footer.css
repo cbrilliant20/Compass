@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: rgb(188, 188, 188);
+}
+
+footer * {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.copyright *{
+  margin: 0 2px;
+}
+
+.socials *{
+  margin: 0 2px;
+  color: black;
+  cursor: pointer;
+}
+

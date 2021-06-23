@@ -2,6 +2,9 @@ import "./Nav.css"
 
 const Nav = (props) => {
 
-  return
-  
+  return(
+<h1>Nav</h1>
+  )
 }
+
+export default Nav
