@@ -1,33 +1,12 @@
 import "./Nav.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
-import { faDraftingCompass } from "@fortawesome/free-solid-svg-icons"
-import { useState } from "react"
+import { Link } from "react-router-dom"
 
-const Nav = (props) => {
-  const [showMenu, setShowMenu] = useState(false)
-  
-  if (showMenu) {
-    return className="nav-links"
-  }
-
-
+const Nav = () => {  
   return (
     <nav>
-      <div className="logo">
-        <FontAwesomeIcon className="logo-icon" icon={faDraftingCompass} />
-        <h1>COMPASS</h1>
-      </div>
-      <div className="burger">
-        <FontAwesomeIcon
-          className="svg-inline--fa fa-bars fa-w-20 burger-icon"
-          icon={faBars}
-          onClick={() => setShowMenu(!showMenu)}
-        />
-        <div className="nav-links">
-          <h1>Hi</h1>
-        </div>
-      </div>
+      <h3>Hi</h3>
+      <h3>Bye</h3>
+      <h3>Sigh</h3>
     </nav>
   )
 }

@@ -1,12 +1,12 @@
 import "./Layout.css"
-import Nav from "../Nav/Nav"
+import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 
 const Layout = (props) => {
   const {children, currentUser} = props
   return (
     <div className="layout">
-      <Nav className="layout-nav" currentUser={currentUser}/>
+      <Header className="layout-header" currentUser={currentUser}/>
       <div className="layout-children">{children}</div>
       <Footer className="layout-footer" />
     </div>

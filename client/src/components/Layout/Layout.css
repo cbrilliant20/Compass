@@ -1,7 +1,7 @@
 .layout {
   display: grid;
   grid-template-areas: 
-  "nav"
+  "header"
   "main"
   "footer";
   grid-template-rows: 70px 1fr 30px;
@@ -9,8 +9,8 @@
   height: 100vh;
 }
 
-.layout-nav {
-  grid-area: nav;
+.layout-header {
+  grid-area: header;
 }
 
 .layout-children {

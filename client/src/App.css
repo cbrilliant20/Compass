@@ -7,3 +7,7 @@
 .App {
   text-align: center;
 }
+
+.svg-inline--fa.fa-w-16 {
+  height: 5em;
+}
