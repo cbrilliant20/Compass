@@ -12,11 +12,14 @@ import Landing from './screens/Landing/Landing';
 import Trips from "./screens/Trips/Trips"
 import TripDetails from "./screens/TripDetails/TripDetails"
 import Resources from './screens/Resources/Resources';
-import SignIn from './screens/SignIn/SignIn';
+import Login from './screens/Login/Login';
+import { deleteFood, getAllTrips, postFood, putFood } from './services/trips';
+
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
+
 
 useEffect(() => {
 const handleVerify = async () => {
@@ -29,13 +32,13 @@ handleVerify();
 const handleLogin = async (formData) => {
 const userData = await loginUser(formData);
 setCurrentUser(userData);
-history.push('/');
+history.push('/trips');
 };
 
 const handleRegister = async (formData) => {
 const userData = await registerUser(formData);
 setCurrentUser(userData);
-history.push('/');
+history.push('/trips');
 };
 
 const handleLogout = () => {
@@ -46,23 +49,27 @@ removeToken();
   
   return (
     <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <Landing/>
+      <Switch>
+        <Route exact path="/">
+          <Landing/>
         </Route>
-        <Route exact path="/trips">
-          <Trips />
-        </Route>
-        <Route exact path="/trips/:id">
-          <TripDetails currentUser={currentUser}/>
-        </Route>
-        <Route exact path="/sign-in">
-          <SignIn setCurrentUser={setCurrentUser} handleLogin={handleLogin} handleRegister={handleRegister}/>
-        </Route>
-        <Route exact path="/resources">
-          <Resources />
-        </Route>
-        </Switch>
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
+          <Switch>
+            <Route exact path="/trips">
+              <Trips />
+            </Route>
+            <Route exact path="/trips/:id">
+              <TripDetails currentUser={currentUser}/>
+            </Route>
+            <Route exact path="/login">
+              <Login setCurrentUser={setCurrentUser} handleLogin={handleLogin} handleRegister={handleRegister}/>
+            </Route>
+            <Route exact path="/resources">
+              <Resources />
+            </Route>
+          </Switch>
+        </Layout>
+      </Switch>
     </div>
   );
 }

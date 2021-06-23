@@ -4,6 +4,9 @@ import { faDraftingCompass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import wave from "../../Assets/wave.mp4"
 import coast from "../../Assets/coast.mp4"
+import bird from "../../Assets/bird.mp4"
+import cove from "../../Assets/cove.mp4"
+
 const Landing = () => {
 
 
@@ -16,12 +19,12 @@ const Landing = () => {
         </div>
       </div>
       <video className="video" muted loop autoPlay >
-        <source src={coast} type="video/mp4" />
+        <source src={cove} type="video/mp4" />
       </video>
       <div className="overlay"></div>
       <div className="content">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam.</h3>
+        <h2>Every Explorer Needs A <span className="landing-span">Compass</span></h2>
+        <h3>Sign In below to start planning your next adventure.</h3>
         <button>Sign In</button>
       </div>
     </div>
