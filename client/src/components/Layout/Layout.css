@@ -1,0 +1,21 @@
+.layout {
+  display: grid;
+  grid-template-areas: 
+  "nav"
+  "main"
+  "footer";
+  grid-template-rows: 70px 1fr 30px;
+  grid-template-columns: 1fr;
+}
+
+.layout-nav {
+  grid-area: nav;
+}
+
+.layout-children {
+  grid-area: main;
+}
+
+.layout-footer {
+  grid-area: footer;
+}

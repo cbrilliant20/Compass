@@ -7,6 +7,7 @@ import {
 	verifyUser,
 	removeToken,
 } from './services/auth';
+import Layout from './components/Layout/Layout';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -40,7 +41,9 @@ removeToken();
   
   return (
     <div className="App">
-
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
+        
+      </Layout>
     </div>
   );
 }
