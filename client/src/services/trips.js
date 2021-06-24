@@ -5,10 +5,10 @@ export const getAllTrips = async () => {
   return resp.data
 }
 
-// export const getOneTrip = async (id) => {
-//   const resp = await api.get(`/trips/${id}`)
-//   return resp.data
-// }
+export const getOneTrip = async (id) => {
+  const resp = await api.get(`/trips/${id}`)
+  return resp.data
+}
 
 export const postTrip = async (tripData) => {
 	const resp = await api.post('/trips', { trip: tripData });

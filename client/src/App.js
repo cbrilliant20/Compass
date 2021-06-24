@@ -12,8 +12,10 @@ import Landing from './screens/Landing/Landing';
 import Trips from "./screens/Trips/Trips"
 import TripDetails from "./screens/TripDetails/TripDetails"
 import Resources from './screens/Resources/Resources';
+import Register from "./screens/Register/Register"
 import Login from './screens/Login/Login';
 import { deleteFood, getAllTrips, postFood, putFood } from './services/trips';
+import { MainContainer } from './containers/MainContainer';
 
 
 function App() {
@@ -55,14 +57,20 @@ removeToken();
         </Route>
         <Layout currentUser={currentUser} handleLogout={handleLogout}>
           <Switch>
-            <Route exact path="/trips">
+            {/* <Route exact path="/trips">
               <Trips />
             </Route>
             <Route exact path="/trips/:id">
               <TripDetails currentUser={currentUser}/>
+            </Route> */}
+            <Route path="/trips">
+              <MainContainer />
             </Route>
             <Route exact path="/login">
-              <Login setCurrentUser={setCurrentUser} handleLogin={handleLogin} handleRegister={handleRegister}/>
+              <Login handleLogin={handleLogin} />
+            </Route>
+            <Route exact path="/register">
+              <Register handleRegister={handleRegister} />
             </Route>
             <Route exact path="/resources">
               <Resources />

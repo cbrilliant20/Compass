@@ -5,10 +5,10 @@ export const getAllItineraries = async () => {
 	return resp.data;
 };
 
-export const getOneItinerary  = async (id) => {
-	const resp = await api.get(`/itineraries/${id}`);
-	return resp.data;
-};
+// export const getOneItinerary  = async (id) => {
+// 	const resp = await api.get(`/itineraries/${id}`);
+// 	return resp.data;
+// };
 
 export const postItinerary  = async (itineraryData) => {
 	const resp = await api.post('/itineraries', { itinerary: itineraryData });

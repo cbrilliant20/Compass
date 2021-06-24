@@ -2,10 +2,11 @@ import "./Landing.css"
 
 import { faDraftingCompass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import wave from "../../Assets/wave.mp4"
-import coast from "../../Assets/coast.mp4"
-import bird from "../../Assets/bird.mp4"
+// import wave from "../../Assets/wave.mp4"
+// import coast from "../../Assets/coast.mp4"
+// import bird from "../../Assets/bird.mp4"
 import cove from "../../Assets/cove.mp4"
+import { Link } from "react-router-dom"
 
 const Landing = () => {
 
@@ -25,7 +26,9 @@ const Landing = () => {
       <div className="content">
         <h2>Every Explorer Needs A <span className="landing-span">Compass</span></h2>
         <h3>Sign In below to start planning your next adventure.</h3>
-        <button>Sign In</button>
+        <Link to='/login'>
+          <button>Sign In</button>
+          </Link>
       </div>
     </div>
   )
