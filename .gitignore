@@ -24,4 +24,5 @@
 /config/master.key
 
 *.mp4
-/client/src/Assets/cove.mp4
+client/src/Assets/cove.mp4
+client/src/Assets/bird.mp4
