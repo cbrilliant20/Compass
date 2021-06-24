@@ -75,10 +75,11 @@ export const MainContainer = () => {
   return (
     <div>
       <Switch>
-        <Route path="/trips">
+        <Route exact path="/trips">
           <Trips trips={trips} tripsCreate={tripsCreate} tripDelete={tripDelete}/>
         </Route>
-        <Route path="/trips/:id/itinerary">
+        {/* <Route exact path="/trips/:id/itinerary"> */}
+        <Route exact path="/itinerary">
           <TripDetails trips={trips} itineraries={itineraries} itinerariesCreate={itinerariesCreate} tripUpdate={tripUpdate} itineraryUpdate={itineraryUpdate}  itineraryDelete={itineraryDelete}/>
         </Route>
       </Switch>

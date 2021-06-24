@@ -33,6 +33,7 @@ header a {
   width: 30px !important;
   height: 40px;
   position: static;
+  margin-left: 30px;
 }
 
 nav {
@@ -48,3 +49,8 @@ nav {
   align-items: center;
 }
 
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

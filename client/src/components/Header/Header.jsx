@@ -7,9 +7,9 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 
 
-const Header = () => {
+const Header = (props) => {
   const [showMenu, setShowMenu] = useState(false)
-
+ const {currentUser} = props
   let nav
   if (showMenu) {
     nav = <Nav />
@@ -23,6 +23,18 @@ const Header = () => {
         <h1>COMPASS</h1>
         </div>
       </Link>
+      <div className="header-right">
+      {currentUser ? (
+        <>
+          <p>{currentUser.username}</p>
+          </>
+      ) : (
+          <Link to='/login'>Login</Link>
+      )} {currentUser &&
+        <>
+      
+
+
       <div className="burger">
         <FontAwesomeIcon
           className="burger-icon"
@@ -30,7 +42,10 @@ const Header = () => {
           onClick={() => setShowMenu(!showMenu)}
         />
       </div>
-      {nav}
+        {nav}
+        </>
+        }
+        </div>
     </header>
   )
 }
