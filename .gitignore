@@ -23,8 +23,8 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-**/*.mp4
+# **/*.mp4
 
-# *.mp4
+*.mp4
 # client/src/Assets/cove.mp4
 # client/src/Assets/bird.mp4
