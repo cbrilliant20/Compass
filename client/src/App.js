@@ -64,7 +64,7 @@ removeToken();
               <TripDetails currentUser={currentUser}/>
             </Route> */}
             <Route path="/trips">
-              <MainContainer />
+              <MainContainer currentUser={currentUser}/>
             </Route>
             <Route exact path="/login">
               <Login handleLogin={handleLogin} />

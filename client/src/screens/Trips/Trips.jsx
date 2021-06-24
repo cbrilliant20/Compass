@@ -20,8 +20,8 @@ const Trips = (props) => {
             <p>{trip.date_start} - {trip.date_end}</p>
             </div>
           <div className="details-button">
-              {/* <Link to={`/trips/${trip.id}/itinerary`}> */}
-              <Link to={`/itinerary`}> 
+              <Link to={`/trips/${trip.id}/itinerary`}>
+              {/* <Link to={`/itinerary`}>  */}
             <button>Details</button>
             </Link>
           </div>

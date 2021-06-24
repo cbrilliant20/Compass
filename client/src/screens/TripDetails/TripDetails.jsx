@@ -6,7 +6,7 @@ import "./TripDetails.css"
 const TripDetails = (props) => {
   const [trip, setTrip] = useState(null)
   const {id} = useParams()
-  const {trips, itineraries, itinerariesCreate, tripUpdate, itineraryUpdate, itineraryDelete} = props
+  const { itinerariesCreate, tripUpdate, itineraryUpdate, itineraryDelete} = props
 
 
   useEffect(() => {
@@ -30,10 +30,11 @@ const TripDetails = (props) => {
   
   return (
     <div>
-    <h1>{trip}
-      
-    </h1>
-    <h1>{itineraries}</h1>
+    <h1>{trip?.name}</h1>
+      {trip?.itineraries.map((item) => (
+        <p>{item.name}</p>
+      )
+    )}
     </div>
   )
 }

@@ -8,10 +8,11 @@ import { deleteItinerary, getAllItineraries, postItinerary, putItinerary } from 
   
 
 
-export const MainContainer = () => {
+export const MainContainer = (props) => {
   const [trips, setTrips] = useState([])
   const [itineraries, setItineraries] = useState([])
   const history = useHistory
+  const {currentUser} = props
 
   useEffect(() => {
     const fetchTrips = async () => {
@@ -19,8 +20,10 @@ export const MainContainer = () => {
       setTrips(tripList)
       
     }
-    fetchTrips()
-  }, [])
+    if (currentUser) {
+      fetchTrips()
+    }
+  }, [currentUser])
 
   useEffect(() => {
     const fetchItineraries = async () => {
@@ -78,8 +81,8 @@ export const MainContainer = () => {
         <Route exact path="/trips">
           <Trips trips={trips} tripsCreate={tripsCreate} tripDelete={tripDelete}/>
         </Route>
-        {/* <Route exact path="/trips/:id/itinerary"> */}
-        <Route exact path="/itinerary">
+        <Route exact path="/trips/:id/itinerary">
+        {/* <Route exact path="/itinerary"> */}
           <TripDetails trips={trips} itineraries={itineraries} itinerariesCreate={itinerariesCreate} tripUpdate={tripUpdate} itineraryUpdate={itineraryUpdate}  itineraryDelete={itineraryDelete}/>
         </Route>
       </Switch>

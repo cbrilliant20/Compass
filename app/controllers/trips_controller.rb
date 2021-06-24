@@ -9,7 +9,7 @@ class TripsController < ApplicationController
   end
 
   def show
-    render json: @trip
+    render json: @trip, include: :itineraries
   end
 
   def create
