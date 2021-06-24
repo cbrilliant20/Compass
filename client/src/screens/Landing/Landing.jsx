@@ -2,9 +2,6 @@ import "./Landing.css"
 
 import { faDraftingCompass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import wave from "../../Assets/wave.mp4"
-// import coast from "../../Assets/coast.mp4"
-// import bird from "../../Assets/bird.mp4"
 import cove from "../../Assets/cove.mp4"
 import { Link } from "react-router-dom"
 
