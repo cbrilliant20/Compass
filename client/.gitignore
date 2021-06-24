@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 
-/src/Assets/cove.mp4
-/src/Assets/bird.mp4
+client/src/Assets/cove.mp4
+client/src/Assets/bird.mp4
