@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
-
+import TripCreate from "../screens/TripCreate/TripCreate"
 import Trips from "../screens/Trips/Trips"; 
 import TripDetails from "../screens/TripDetails/TripDetails"
 import { deleteTrip, getAllTrips, postTrip, putTrip } from "../services/trips";
@@ -30,8 +30,10 @@ export const MainContainer = (props) => {
       const itineraryList = await getAllItineraries()
       setItineraries(itineraryList)
     }
-    fetchItineraries()
-  }, [])
+    if (currentUser) {
+      fetchItineraries()
+    }
+  }, [currentUser])
 
   const tripsCreate = async (formData) => {
     const tripItem = await postTrip(formData)
@@ -81,8 +83,10 @@ export const MainContainer = (props) => {
         <Route exact path="/trips">
           <Trips trips={trips} tripsCreate={tripsCreate} tripDelete={tripDelete}/>
         </Route>
+        <Route exact path="/trips/new">
+          <TripCreate tripsCreate={tripsCreate} trips={trips} />
+        </Route>
         <Route exact path="/trips/:id/itinerary">
-        {/* <Route exact path="/itinerary"> */}
           <TripDetails trips={trips} itineraries={itineraries} itinerariesCreate={itinerariesCreate} tripUpdate={tripUpdate} itineraryUpdate={itineraryUpdate}  itineraryDelete={itineraryDelete}/>
         </Route>
       </Switch>
@@ -90,8 +94,7 @@ export const MainContainer = (props) => {
   )
 }
 
-
-
+export default MainContainer
   
 
   

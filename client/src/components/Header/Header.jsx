@@ -9,7 +9,8 @@ import { useState } from "react"
 
 const Header = (props) => {
   const [showMenu, setShowMenu] = useState(false)
- const {currentUser} = props
+  const { currentUser } = props
+  
   let nav
   if (showMenu) {
     nav = <Nav />
@@ -30,11 +31,10 @@ const Header = (props) => {
           </>
       ) : (
           <Link to='/login'>Login</Link>
-      )} {currentUser &&
-        <>
-      
-
-
+        )}
+        {currentUser &&
+          <>
+    
       <div className="burger">
         <FontAwesomeIcon
           className="burger-icon"

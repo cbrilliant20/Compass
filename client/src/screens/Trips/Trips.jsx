@@ -3,31 +3,8 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 
 const Trips = (props) => {
-  const { trips, tripDelete, tripsCreate } = props
-  const [formData, setFormData] = useState({
-    name: '',
-    location: '',
-    dateStart: '',
-    dateEnd: '',
-    imgUrl: '',
-  })
-  const { name, location, dateStart, dateEnd, imgUrl } = formData
-  
-  const [showFrom, setShowForm] = useState(false)
-  let form = 
-
-
-
-
-	const handleChange = (e) => {
-		const { name, value } = e.target;
-		setFormData((prevState) => ({
-			...prevState,
-			[name]: value,
-		}));
-	};
-
-
+  const { trips, tripDelete } = props
+  console.log(trips)
   return(
     <div className="trips-container">
       <h2>Your Trips</h2>
@@ -44,7 +21,6 @@ const Trips = (props) => {
             </div>
           <div className="details-button">
               <Link to={`/trips/${trip.id}/itinerary`}>
-              {/* <Link to={`/itinerary`}>  */}
             <button>Details</button>
             </Link>
           </div>
@@ -52,39 +28,6 @@ const Trips = (props) => {
         </div>
       ))}  
       </div>
-
-      <form
-        onSubmit={(e) => {
-          e.preventDefault()
-          tripsCreate(formData)
-      }}>
-        <label>
-          Name:
-          <input type="text" name="name" value={name} onChange={handleChange} />
-        </label>
-        <label>
-          Location:
-          <input type="text" name="location" value={location} onChange={handleChange} />
-        </label>
-        <label>
-          Start Date:
-          <input type="date" name="dateStart" value={dateStart} onChange={handleChange} />
-        </label>
-        <label>
-          End Date:
-          <input type="date" name="dateEnd" value={dateEnd} onChange={handleChange} />
-        </label>
-        <label>
-          Image URL:
-          <input type="text" name="imgUrl" value={imgUrl} onChange={handleChange} />
-        </label>
-
-      </form>
-
-
-
-
-
       </div>
   )
 }
