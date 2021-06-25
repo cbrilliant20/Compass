@@ -81,10 +81,10 @@ export const MainContainer = (props) => {
     <div>
       <Switch>
         <Route exact path="/trips">
-          <Trips trips={trips} tripsCreate={tripsCreate} tripDelete={tripDelete}/>
+          <Trips trips={trips} tripDelete={tripDelete}/>
         </Route>
         <Route exact path="/trips/new">
-          <TripCreate tripsCreate={tripsCreate} trips={trips} />
+          <TripCreate tripsCreate={tripsCreate} />
         </Route>
         <Route exact path="/trips/:id/itinerary">
           <TripDetails trips={trips} itineraries={itineraries} itinerariesCreate={itinerariesCreate} tripUpdate={tripUpdate} itineraryUpdate={itineraryUpdate}  itineraryDelete={itineraryDelete}/>

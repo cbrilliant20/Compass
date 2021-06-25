@@ -1,7 +1,6 @@
 import { useState } from "react"
 
 const TripCreate = (props) => {
-  const { tripsCreate } = props
   const [formData, setFormData] = useState({
     name: '',
     location: '',
@@ -9,6 +8,7 @@ const TripCreate = (props) => {
     dateEnd: '',
     imgUrl: '',
   })
+  const { tripsCreate } = props
   const { name, location, dateStart, dateEnd, imgUrl } = formData
 
 
