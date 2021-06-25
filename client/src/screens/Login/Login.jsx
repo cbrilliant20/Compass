@@ -46,9 +46,7 @@ const Login = (props) => {
 			</label>
 			<br />
       <Link to='/register'>Register</Link>
-      <Link to="/trips">
-        <button>Submit</button>
-        </Link>
+      <button>Submit</button>
 		</form>
 	);
 }

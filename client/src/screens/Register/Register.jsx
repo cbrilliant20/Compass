@@ -59,9 +59,9 @@ const Register = (props) => {
       />
      </label>
         <br />
-        <Link to="/trips">
+
           <button>Submit</button>
-          </Link>
+
       </form>
       </div>
   )

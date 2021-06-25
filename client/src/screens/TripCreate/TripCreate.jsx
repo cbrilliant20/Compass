@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-
-
 const TripCreate = (props) => {
   const { tripsCreate } = props
   const [formData, setFormData] = useState({
@@ -26,8 +24,8 @@ const TripCreate = (props) => {
   return (
     <form
     onSubmit={(e) => {
-      e.preventDefault()
-      tripsCreate(formData)
+        e.preventDefault();
+        tripsCreate(formData);
   }}>
     <label>
       Name:
@@ -48,8 +46,8 @@ const TripCreate = (props) => {
     <label>
       Image URL:
       <input type="text" name="imgUrl" value={imgUrl} onChange={handleChange} />
-    </label>
-
+      </label>
+      <button>Add Trip</button>
   </form>
   )
 }

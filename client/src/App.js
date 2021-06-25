@@ -12,8 +12,7 @@ import Landing from './screens/Landing/Landing';
 import Resources from './screens/Resources/Resources';
 import Register from "./screens/Register/Register"
 import Login from './screens/Login/Login';
-import { deleteFood, getAllTrips, postFood, putFood } from './services/trips';
-import  MainContainer  from './containers/MainContainer';
+import MainContainer from './containers/MainContainer';
 
 
 function App() {
