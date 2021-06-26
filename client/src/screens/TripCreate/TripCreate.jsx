@@ -50,11 +50,11 @@ const TripCreate = (props) => {
     </label>
     <label>
       Start Date:
-      <input type="date" name="dateStart" value={dateStart} onChange={handleChange} />
+      <input type="text" name="dateStart" value={dateStart} onChange={handleChange} />
     </label>
     <label>
       End Date:
-      <input type="date" name="dateEnd" value={dateEnd} onChange={handleChange} />
+      <input type="text" name="dateEnd" value={dateEnd} onChange={handleChange} />
     </label>
     <label>
       Image URL:

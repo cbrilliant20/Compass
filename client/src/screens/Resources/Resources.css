@@ -1,0 +1,45 @@
+.resource-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.resource-card {
+  width: 300px;
+  height: 375px;
+  border: 1px solid grey;
+  margin: 50px;
+  font-size: 14px;
+  text-align: left;
+  position: relative;
+}
+
+
+.resource-card-img {
+  width: 295px;
+  height: 200px;
+border-bottom: 1px solid grey;
+}
+
+.resource-card-name,
+.resource-card-description {
+  padding: 5px 10px;
+}
+
+
+
+
+
+.resource-card-button {
+  height: 40px;
+  width: 80px;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 10px;
+}
+.resource-card-button a {
+  text-decoration: none;
+  color: black;
+}
