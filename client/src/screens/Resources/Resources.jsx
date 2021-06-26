@@ -16,7 +16,7 @@ const Resources = () => {
               <img src={item.imgUrl} alt="" className="resource-card-img" />
               <div className="resource-card-content">
               <p className="resource-card-name">{item.name} <br/> {item.description}</p>
-              <button className="resource-card-button"><a href={item.siteUrl}>Visit</a></button>
+              <button className="resource-card-button"><a href={item.siteUrl} target="_blank">Visit</a></button>
               </div>
               </div>
           ))}

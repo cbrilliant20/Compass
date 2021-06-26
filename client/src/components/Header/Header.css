@@ -47,6 +47,8 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 10;
+  opacity: 90%;
 }
 
 .header-right {
