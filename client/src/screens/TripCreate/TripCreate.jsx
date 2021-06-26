@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { useHistory } from "react-router-dom"
+import { postTrip } from "../../services/trips"
 
 const TripCreate = (props) => {
   const [formData, setFormData] = useState({
@@ -8,9 +10,17 @@ const TripCreate = (props) => {
     dateEnd: '',
     imgUrl: '',
   })
-  const { tripsCreate } = props
+  // const { tripsCreate } = props
   const { name, location, dateStart, dateEnd, imgUrl } = formData
+  const [trips, setTrips] = useState([])
+  const history = useHistory
 
+
+  const tripsCreate = async (formData) => {
+    const tripItem = await postTrip(formData)
+    setTrips((prevState) => [...prevState, tripItem])
+    history.push("/trips")
+  }
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -19,6 +29,9 @@ const TripCreate = (props) => {
 			[name]: value,
 		}));
 	};
+
+
+
 
 
   return (

@@ -27,10 +27,11 @@ const Trips = (props) => {
     <div className="trips-container">
       <div className="trips-header">
       <h2>Your Trips</h2>
-      <FontAwesomeIcon className="add-icon" icon={faPlusCircle} onClick={() => setShowForm(!showForm)}/>
+        <FontAwesomeIcon className="add-icon" icon={faPlusCircle} onClick={() => setShowForm(!showForm)} />
+        </div>
       <div className="trips">
         {form}
-        </div>
+        
       {trips.map((trip) => (
         <div className="trip-card">
           <img src={trip.img_url} className="trip-img" />
@@ -47,8 +48,9 @@ const Trips = (props) => {
           </div>
           </div> 
         </div>
-      ))}  
-      </div>
+      ))}
+        </div>
+      
       </div>
   )
 }

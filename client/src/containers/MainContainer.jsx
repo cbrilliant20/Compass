@@ -38,7 +38,7 @@ export const MainContainer = (props) => {
   const tripsCreate = async (formData) => {
     const tripItem = await postTrip(formData)
     setTrips((prevState) => [...prevState, tripItem])
-    history.push("/trips")
+    // history.push("/trips")
   }
 
   const itinerariesCreate = async (formData) => {

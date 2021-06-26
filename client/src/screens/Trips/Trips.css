@@ -10,9 +10,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+flex-wrap: wrap;
 }
 
-
+.trips-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .trip-card {
   height: 500px;
