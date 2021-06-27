@@ -1,3 +1,4 @@
+import "./TripCreate.css"
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { postTrip } from "../../services/trips"
@@ -38,32 +39,17 @@ const TripCreate = (props) => {
 
 
   return (
-    <form
+    <form className="trip-create-form"
     onSubmit={(e) => {
         e.preventDefault();
         tripsCreate(formData);
   }}>
-    <label>
-      Name:
-      <input type="text" name="name" value={name} onChange={handleChange} />
-    </label>
-    <label>
-      Location:
-      <input type="text" name="location" value={location} onChange={handleChange} />
-    </label>
-    <label>
-      Start Date:
-      <input type="text" name="date_start" value={date_start} onChange={handleChange} />
-    </label>
-    <label>
-      End Date:
-      <input type="text" name="date_end" value={date_end} onChange={handleChange} />
-    </label>
-    <label>
-      Image URL:
-      <input type="text" name="img_url" value={img_url} onChange={handleChange} />
-      </label>
-      <button>Add Trip</button>
+      <input type="text" name="name" placeholder="Name" value={name} onChange={handleChange} />
+      <input type="text" name="location" placeholder="Location" value={location} onChange={handleChange} />
+      <input type="text" placeholder="Start Date"name="date_start" value={date_start} onChange={handleChange} />
+      <input type="text" name="date_end" placeholder="End Date" value={date_end} onChange={handleChange} />
+      <input type="text" name="img_url" placeholder="Image URL" value={img_url} onChange={handleChange} />
+    <button>Add Trip</button>
   </form>
   )
 }
