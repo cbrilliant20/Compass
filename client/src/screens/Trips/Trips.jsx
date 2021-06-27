@@ -41,11 +41,12 @@ const Trips = (props) => {
           <p>{trip.location}</p>
             <p>{trip.date_start} - {trip.date_end}</p>
             </div>
-          <div className="details-button">
+          <div className="details-buttons">
               <Link to={`/trips/${trip.id}/itinerary`}>
             <button>Details</button>
             </Link>
-          </div>
+            <button className="delete-button" onClick={() => tripDelete(trip.id)}>Delete</button>
+              </div>
           </div> 
         </div>
       ))}

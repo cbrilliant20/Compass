@@ -6,12 +6,12 @@ const TripCreate = (props) => {
   const [formData, setFormData] = useState({
     name: '',
     location: '',
-    dateStart: '',
-    dateEnd: '',
-    imgUrl: '',
+    date_start: '',
+    date_end: '',
+    img_url: '',
   })
   // const { tripsCreate } = props
-  const { name, location, dateStart, dateEnd, imgUrl } = formData
+  const { name, location, date_start, date_end, img_url } = formData
   const [trips, setTrips] = useState([])
   const history = useHistory
 
@@ -19,7 +19,8 @@ const TripCreate = (props) => {
   const tripsCreate = async (formData) => {
     const tripItem = await postTrip(formData)
     setTrips((prevState) => [...prevState, tripItem])
-    history.push("/trips")
+    // history.push("/trips")
+    refreshPage()
   }
 
 	const handleChange = (e) => {
@@ -30,7 +31,9 @@ const TripCreate = (props) => {
 		}));
 	};
 
-
+  const refreshPage = () => {
+  window.location.reload()
+}
 
 
 
@@ -50,15 +53,15 @@ const TripCreate = (props) => {
     </label>
     <label>
       Start Date:
-      <input type="text" name="dateStart" value={dateStart} onChange={handleChange} />
+      <input type="text" name="date_start" value={date_start} onChange={handleChange} />
     </label>
     <label>
       End Date:
-      <input type="text" name="dateEnd" value={dateEnd} onChange={handleChange} />
+      <input type="text" name="date_end" value={date_end} onChange={handleChange} />
     </label>
     <label>
       Image URL:
-      <input type="text" name="imgUrl" value={imgUrl} onChange={handleChange} />
+      <input type="text" name="img_url" value={img_url} onChange={handleChange} />
       </label>
       <button>Add Trip</button>
   </form>
