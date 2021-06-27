@@ -1,0 +1,26 @@
+.itinerary-form {
+  width: 425px;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  padding: 30px;
+  /* grid-template-columns: span 2; */
+  background-color: green;
+  border-radius: 2rem;
+  margin: 10px;
+}
+
+.itinerary-form input {
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.itinerary-form button {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}

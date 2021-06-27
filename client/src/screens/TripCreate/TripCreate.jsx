@@ -11,7 +11,6 @@ const TripCreate = (props) => {
     date_end: '',
     img_url: '',
   })
-  // const { tripsCreate } = props
   const { name, location, date_start, date_end, img_url } = formData
   const [trips, setTrips] = useState([])
   const history = useHistory

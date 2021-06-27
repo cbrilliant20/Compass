@@ -6,9 +6,6 @@ import { faPlusCircle} from "@fortawesome/free-solid-svg-icons"
 import TripCreate from "../TripCreate/TripCreate"
 
 
-
-
-
 const Trips = (props) => {
   const [showForm, setShowForm] = useState(false)
 
@@ -18,10 +15,8 @@ const Trips = (props) => {
   }
 
 
-
-
-
   const { trips, tripDelete } = props
+
   console.log(trips)
   return(
     <div className="trips-container">
