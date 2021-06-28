@@ -12,29 +12,15 @@ const ItineraryCreate = (props) => {
 
   const { name, location, date_start } = formData
   const [itineraries, setItineraries] = useState([])
-  const history = useHistory
   const {itinerariesCreate, id} = props
-
-  // const itineraryCreate = async (formData) => {
-  //   const itineraryItem = await postItinerary(formData)
-  //   setItineraries((prevState) => [...prevState, itineraryItem])
-  //   // history.push("/trips")
-  //   refreshPage()
-  // }
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData((prevState) => ({
 			...prevState,
 			[name]: value,
-		}));
+    }));
 	};
-
-  const refreshPage = () => {
-  window.location.reload()
-}
-
-
 
   return (
     <form className="itinerary-form"

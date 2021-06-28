@@ -18,15 +18,13 @@ const TripDetails = (props) => {
       const tripData = await getOneTrip(id)
       setTrip(tripData)
     }
-    fetchTrip()
-  }, [id])
+      fetchTrip()
+  }, [id, currentUser])
 
   let form
   if (showEditForm) {
-    form = <TripEdit trip={trips} tripUpdate={tripUpdate} id={id} />
+    form = <TripEdit trips={trips} tripUpdate={tripUpdate} id={id} />
   }
-  
-  
   
   return (
     <div>

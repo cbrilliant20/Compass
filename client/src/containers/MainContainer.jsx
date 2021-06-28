@@ -26,8 +26,6 @@ export const MainContainer = (props) => {
     }
   }, [currentUser])
 
-  console.log(trips)
-
 
   useEffect(() => {
     const fetchItineraries = async () => {
@@ -42,13 +40,12 @@ export const MainContainer = (props) => {
   const tripsCreate = async (formData) => {
     const tripItem = await postTrip(formData)
     setTrips((prevState) => [...prevState, tripItem])
-    // history.push("/trips")
   }
 
   const itinerariesCreate = async (id, formData) => {
     const itineraryItem = await postItinerary(id, formData)
     setItineraries((prevState) => [...prevState, itineraryItem])
-    // history.push("/trips")
+    refreshPage()
   }
 
   const tripUpdate = async (id, formData) => {
@@ -58,7 +55,7 @@ export const MainContainer = (props) => {
         return trip.id === Number(id) ? tripItem : trip
       })
     )
-    // history.push("/trips/:id/itinerary")
+    refreshPage()
   }
 
   const itineraryUpdate = async (id, formData) => {
@@ -68,7 +65,7 @@ export const MainContainer = (props) => {
         return itinerary.id === Number(id) ? itineraryItem : itinerary
       })
     )
-    history.push("/trips")
+    
   }
 
   const tripDelete = async (id) => {

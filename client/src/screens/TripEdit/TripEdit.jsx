@@ -14,24 +14,22 @@ const TripEdit = (props) => {
   const { name, location, date_start, date_end, img_url } = formData
   const { trips, tripUpdate } = props
   const { id } = useParams()
-
-
-	// useEffect(() => {
-	// 	const prefillFormData = () => {
-  //     const singleTrip = trips.find((trip) => trip.id === Number(id));
-	// 		setFormData({
-  //       name: singleTrip.name,
-  //       location: singleTrip.location,
-  //       date_start: singleTrip.date_start,
-  //       date_end: singleTrip.date_end,
-  //       img_url: singleTrip.img_url,
-	// 		});
-  //   };
-  //   prefillFormData()
-	// 	if (trips.length) {
-	// 		prefillFormData();
-	// 	}
-  // }, [trips]);
+  
+	useEffect(() => {
+		const prefillFormData = () => {
+      const singleTrip = trips.find((trip) => trip.id === Number(id));
+			setFormData({
+        name: singleTrip.name,
+        location: singleTrip.location,
+        date_start: singleTrip.date_start,
+        date_end: singleTrip.date_end,
+        img_url: singleTrip.img_url,
+			});
+    };
+		if (trips?.length) {
+			prefillFormData();
+		}
+  }, [trips]);
   
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -41,7 +39,8 @@ const TripEdit = (props) => {
 		}));
 	};
 
-  return(
+  return (
+    <div className="wrapper">
     <form className="trip-edit-form"
     onSubmit={(e) => {
         e.preventDefault();
@@ -54,7 +53,8 @@ const TripEdit = (props) => {
       <input type="text" name="date_end" placeholder="End Date" value={date_end} onChange={handleChange} />
       <input type="text" name="img_url" placeholder="Image URL" value={img_url} onChange={handleChange} />
     <button>Save</button>
-  </form>
+      </form>
+      </div>
   )
 }
 

@@ -9,7 +9,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #83AAC7;
+  background: rgb(131,170,199);
+background: linear-gradient(90deg, rgba(131,170,199,1) 0%, rgba(120,155,181,1) 100%);
   width: 40%;
   height: 45vh;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
@@ -25,6 +26,9 @@
   font-size: 18px;
   border: none;
   outline: none;
+  border: 1px solid #949292;
+  box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+  background: rgb(218, 228, 220);
 }
 
 .login-form h3 {
