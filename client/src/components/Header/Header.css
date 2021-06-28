@@ -18,7 +18,8 @@ header a {
   justify-content: center;
   align-items: center;
   margin-left: 50px;
-
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .logo * {
@@ -26,7 +27,8 @@ header a {
 }
 
 .logo-icon {
-  width: 40px !important;
+  width: 80px !important;
+  font-size: 35px;
 }
 
 .burger {
@@ -61,4 +63,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.login-button {
+  margin-right: 80px;
 }

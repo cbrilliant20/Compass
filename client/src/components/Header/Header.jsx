@@ -18,7 +18,7 @@ const Header = (props) => {
 
   return (
     <header>
-      <Link to="/">
+      <Link to="/trips">
       <div className="logo">
         <FontAwesomeIcon className="logo-icon" icon={faDraftingCompass} />
         <h1>COMPASS</h1>
@@ -30,7 +30,7 @@ const Header = (props) => {
           <p>{currentUser.username}</p>
           </>
       ) : (
-          <Link to='/login'>Login</Link>
+          <Link to='/login'><button className="login-button">Login</button></Link>
         )}
         {currentUser &&
           <>

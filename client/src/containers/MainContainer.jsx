@@ -14,6 +14,8 @@ export const MainContainer = (props) => {
   const history = useHistory
   const {currentUser} = props
 
+
+
   useEffect(() => {
     const fetchTrips = async () => {
       const tripList = await getAllTrips()
@@ -23,6 +25,9 @@ export const MainContainer = (props) => {
       fetchTrips()
     }
   }, [currentUser])
+
+  console.log(trips)
+
 
   useEffect(() => {
     const fetchItineraries = async () => {
@@ -53,7 +58,7 @@ export const MainContainer = (props) => {
         return trip.id === Number(id) ? tripItem : trip
       })
     )
-    history.push("/trips")
+    // history.push("/trips/:id/itinerary")
   }
 
   const itineraryUpdate = async (id, formData) => {
@@ -90,7 +95,7 @@ export const MainContainer = (props) => {
           <TripCreate tripsCreate={tripsCreate} />
         </Route>
         <Route exact path="/trips/:id/itinerary">
-          <TripDetails trips={trips} itineraries={itineraries} itinerariesCreate={itinerariesCreate} tripUpdate={tripUpdate} itineraryUpdate={itineraryUpdate}  itineraryDelete={itineraryDelete}/>
+          <TripDetails currentUser={currentUser} trips={trips} itineraries={itineraries} itinerariesCreate={itinerariesCreate} tripUpdate={tripUpdate} itineraryUpdate={itineraryUpdate}  itineraryDelete={itineraryDelete}/>
         </Route>
       </Switch>
     </div>

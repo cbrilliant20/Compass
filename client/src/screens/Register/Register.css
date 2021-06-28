@@ -11,7 +11,7 @@
   border-radius: 10px;
   background-color: #83AAC7;
   width: 40%;
-  height: 50vh;
+  height: 55vh;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
@@ -28,8 +28,8 @@
 }
 
 .register-form h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin: 20px;
 }
 
 .register-form input * {
@@ -53,10 +53,16 @@ font-size: 35px;
   align-items: center;
   justify-content: space-between;
   width: 85%;
+  margin-bottom: 20px;
 }
 
 .register-form a {
   text-decoration: none;
   color: inherit;
   font-size: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+.register-form a:hover{
+  border-bottom: 1px solid #dddddd;
 }

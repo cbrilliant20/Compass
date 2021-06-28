@@ -9,7 +9,7 @@ import TripCreate from "../TripCreate/TripCreate"
 const Trips = (props) => {
   const [showForm, setShowForm] = useState(false)
   const { trips, tripDelete } = props
-  
+
   let form
   if (showForm) {
     form = <TripCreate />
@@ -24,9 +24,10 @@ const Trips = (props) => {
       <div className="trips-header">
       <h2>Your Trips</h2>
         <FontAwesomeIcon className="add-icon" icon={faPlusCircle} onClick={() => setShowForm(!showForm)} />
-        </div>
+      </div>
+      {form}
       <div className="trips">
-        {form}
+        
         
       {trips.map((trip) => (
         <div className="trip-card">

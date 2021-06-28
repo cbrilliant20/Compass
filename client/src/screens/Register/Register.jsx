@@ -30,7 +30,8 @@ const Register = (props) => {
     <h3>Register</h3>
     <input
       type='text'
-      name='username'
+        name='username'
+        placeholder="Username"
       value={username}
       onChange={handleChange}
       />
@@ -38,6 +39,7 @@ const Register = (props) => {
       <input
         type='text'
         name='email'
+        placeholder="Email"
         value={email}
         onChange={handleChange}
         />
@@ -45,12 +47,15 @@ const Register = (props) => {
       <input
         type='password'
         name='password'
+        placeholder="Password"
         value={password}
         onChange={handleChange}
       />
-    <br />
+      <br />
+      <span>
         <button>Submit</button>
         <Link to='/login'>Login</Link>
+        </span>
     </form>
     
   )

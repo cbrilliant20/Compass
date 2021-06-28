@@ -14,12 +14,12 @@ const TripCreate = (props) => {
   const { name, location, date_start, date_end, img_url } = formData
   const [trips, setTrips] = useState([])
   const history = useHistory
+  const {trip} = props
 
 
   const tripsCreate = async (formData) => {
     const tripItem = await postTrip(formData)
     setTrips((prevState) => [...prevState, tripItem])
-    // history.push("/trips")
     refreshPage()
   }
 
@@ -42,7 +42,8 @@ const TripCreate = (props) => {
     onSubmit={(e) => {
         e.preventDefault();
         tripsCreate(formData);
-  }}>
+      }}>
+      <h3>Add a Trip:</h3>
       <input type="text" name="name" placeholder="Name" value={name} onChange={handleChange} />
       <input type="text" name="location" placeholder="Location" value={location} onChange={handleChange} />
       <input type="text" placeholder="Start Date"name="date_start" value={date_start} onChange={handleChange} />

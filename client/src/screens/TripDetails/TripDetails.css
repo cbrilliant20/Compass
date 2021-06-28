@@ -1,21 +1,30 @@
 .trip-details-container{
   display: flex;
   justify-content: space-evenly;
-  /* align-items: center; */
 }
 
-
+.details-title{
+  margin: 20px 0;
+  font-size: 50px;
+}
 
 .itinerary-container {
   width: 450px;
-  background: red;
+  background: rgb(100,117,165);
+  background: linear-gradient(90deg, rgba(100,117,165,1) 0%, rgba(76,88,124,1) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   padding: 20px;
-  margin: 20px;
+  margin: 20px 0;
   min-height: 375px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.itinerary-container h3 {
+  margin: 10px 0;
+  font-size: 25px;
 }
 
 .itinerary-card {
@@ -24,11 +33,12 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   padding: 20px;
-  /* grid-template-columns: span 2; */
   background-color: green;
   border-radius: 2rem;
   margin: 10px;
   text-align: left;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  
 }
 
 .itinerary-card * {
@@ -36,7 +46,7 @@
   padding: 5px 10px;
   border-radius: 20px;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
 }
 
@@ -44,6 +54,9 @@
   border-radius: 20px;
   outline: none;
   border: none;
+  margin: 5px;
+  width: fill;
+
 }
 
 
@@ -53,24 +66,39 @@
 .trip-details-card {
   height: 500px;
   width: 375px;
-  background-color: grey;
-  margin: 20px;
+  background: rgb(100,117,165);
+  background: linear-gradient(90deg, rgba(100,117,165,1) 0%, rgba(76,88,124,1) 100%);
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+position: relative;
 }
 
 .trip-details-card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 10px;
+  line-height: 2;
+  text-align: left;
 }
 
 .trip-details-img {
   height: 375px;
   width: 375px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.trip-details-card{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding-left: 10px;
+.trip-details-card button{
+  position: absolute;
+  bottom: 25px;
+  margin-left: 80px;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  font-size: 30px;
 }

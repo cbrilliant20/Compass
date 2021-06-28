@@ -4,7 +4,7 @@ footer {
   align-items: center; 
 background: rgb(57,87,133);
 background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
-
+font-size: 18px;
 }
 
 footer * {
@@ -17,9 +17,11 @@ footer * {
   cursor: pointer;
   height: fit-content;
   overflow-y: hidden;
+  margin: 0 20px;
 }
 
 .socials a {
   text-decoration: none;
   color: inherit;
+  margin: 0 8px;
 }

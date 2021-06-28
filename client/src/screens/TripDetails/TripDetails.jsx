@@ -3,13 +3,15 @@ import { useParams } from "react-router-dom"
 import { getOneTrip } from "../../services/trips"
 import "./TripDetails.css"
 import ItineraryCreate from "../ItineraryCreate/ItineraryCreate"
-
+import TripEdit from "../TripEdit/TripEdit"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEdit} from "@fortawesome/free-solid-svg-icons"
 
 const TripDetails = (props) => {
   const [trip, setTrip] = useState(null)
   const {id} = useParams()
-  const { itinerariesCreate, tripUpdate, itineraryUpdate, itineraryDelete} = props
-
+  const { trips, itinerariesCreate, tripUpdate, itineraryUpdate, itineraryDelete, currentUser} = props
+  const [showEditForm, setShowEditForm] = useState(false)
 
   useEffect(() => {
     const fetchTrip = async () => {
@@ -19,13 +21,18 @@ const TripDetails = (props) => {
     fetchTrip()
   }, [id])
 
+  let form
+  if (showEditForm) {
+    form = <TripEdit trip={trips} tripUpdate={tripUpdate} id={id} />
+  }
   
   
   
   return (
     <div>
-      <h1>{trip?.name}</h1>
+      <h1 className="details-title">{trip?.name}</h1>
       <div className="trip-details-container">
+      
       <div className="trip-details-card">
           <img src={trip?.img_url} className="trip-details-img" />
           <div className="trip-details-card-content">
@@ -35,12 +42,14 @@ const TripDetails = (props) => {
             <p>{trip?.date_start} - {trip?.date_end}</p>
             </div>
 
-          </div> 
+          </div>
+          <FontAwesomeIcon className="edit-icon" icon={faEdit} onClick={() => setShowEditForm(!showEditForm)} />
+          {form}
       </div>
       
       
       <div className="itinerary-container">
-        <h3>Your Upcoming Itinerary</h3>
+        <h3>Upcoming Itinerary</h3>
       {trip?.itineraries.map((item) => (
         <div className="itinerary-card">
           <p>{item.name}</p>
@@ -52,7 +61,8 @@ const TripDetails = (props) => {
 
       )
       )}
-          <ItineraryCreate itinerariesCreate={itinerariesCreate} id={id}/>
+          <ItineraryCreate itinerariesCreate={itinerariesCreate} id={id} />
+
         </div>
         </div>
       </div>
