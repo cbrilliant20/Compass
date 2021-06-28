@@ -17,7 +17,7 @@ class TripsController < ApplicationController
     @trip.user = @current_user
 
     if @trip.save
-      render json: @trip, status: :created
+      render json: @trip, status: :created, include: :itineraries
     else
       render json: @trip.errors, status: :unprocessable_entity
     end

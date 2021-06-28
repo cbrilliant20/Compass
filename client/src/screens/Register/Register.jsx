@@ -1,3 +1,4 @@
+import "./Register.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -20,8 +21,6 @@ const Register = (props) => {
 
 
   return (
-    <div className="register-container">
-
     <form className="register-form"
     onSubmit={(e) => {
       e.preventDefault();
@@ -29,41 +28,31 @@ const Register = (props) => {
     }}
   >
     <h3>Register</h3>
-    <label>
-      Username:
-      <input
-        type='text'
-        name='username'
-        value={username}
-        onChange={handleChange}
+    <input
+      type='text'
+      name='username'
+      value={username}
+      onChange={handleChange}
       />
-    </label>
     <br />
-    <label>
-      Email:
       <input
         type='text'
         name='email'
         value={email}
         onChange={handleChange}
-      />
-    </label>
-    <br />
-    <label>
-      Password:
+        />
+    <br/>
       <input
         type='password'
         name='password'
         value={password}
         onChange={handleChange}
       />
-     </label>
-        <br />
-
-          <button>Submit</button>
-
-      </form>
-      </div>
+    <br />
+        <button>Submit</button>
+        <Link to='/login'>Login</Link>
+    </form>
+    
   )
 }
 

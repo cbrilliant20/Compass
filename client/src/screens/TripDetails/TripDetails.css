@@ -55,7 +55,6 @@
   width: 375px;
   background-color: grey;
   margin: 20px;
-  border: 1px solid grey;
 }
 
 .trip-details-card-content {
@@ -67,7 +66,6 @@
 .trip-details-img {
   height: 375px;
   width: 375px;
-  border: 1px solid grey;
 }
 
 .trip-details-card{

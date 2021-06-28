@@ -1,3 +1,4 @@
+import "./Login.css"
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -18,35 +19,34 @@ const Login = (props) => {
 	};
 
 	return (
-		<form
+    <form
+      className="login-form"
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleLogin(formData);
 			}}
 		>
 			<h3>Login</h3>
-			<label>
-				Username:
 				<input
 					type='text'
-					name='username'
+          name='username'
+          placeholder="Username"
 					value={username}
 					onChange={handleChange}
 				/>
-			</label>
 			<br />
-			<label>
-				Password:
 				<input
 					type='password'
-					name='password'
+          name='password'
+          placeholder="Password"
 					value={password}
 					onChange={handleChange}
 				/>
-			</label>
-			<br />
-      <Link to='/register'>Register</Link>
-      <button>Submit</button>
+      <br />
+      <span>
+        <button>Submit</button>
+        <Link to='/register'>Register</Link>
+      </span>
 		</form>
 	);
 }

@@ -8,17 +8,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: blue;
+  border-radius: 20px;
+  background-color: #83AAC7;
   width: 50%;
   height: 60vh;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+
 }
 
 .trip-create-form input {
   width: 500px;
   height: 50px;
   margin: 10px 0;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   font-size: 18px;
   border: none;
@@ -27,4 +30,15 @@
 
 .trip-create-form input * {
 font-size: 35px;
+}
+
+.trip-create-form button {
+  height: 40px;
+  width: 150px;
+  margin: 5px 0;
+  background-color: #77B6EA;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
+  color: inherit;
 }

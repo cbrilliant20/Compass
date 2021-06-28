@@ -4,30 +4,27 @@
   "header"
   "main"
   "footer";
-  grid-template-rows: 70px 1fr 30px;
+  grid-template-rows: 90px 1fr 30px;
   grid-template-columns: 1fr;
   height: 100vh;
   }
 
 .layout-header {
   grid-area: header;
-  /* background: rgb(210,213,215); */
-   /* background: linear-gradient(90deg, rgba(210,213,215,1) 0%, rgba(191,193,194,1) 100%); */
-   /* background: #233C62; */
+  background: rgb(57,87,133);
+  background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
   }
 
 .layout-children {
   grid-area: main;
-  background: rgb(210,213,215);
-  background: linear-gradient(90deg, rgba(210,213,215,1) 0%, rgba(191,193,194,1) 100%);
-  background: #233C62;
+  background: rgb(57,87,133);
+  background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
 
 }
 
 .layout-footer {
-  /* grid-area: footer;
-  background: rgb(232,238,242);
-background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%); */
-/* background: #233C62; */
+grid-area: footer;
+background: rgb(57,87,133);
+background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
 
 }

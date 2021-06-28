@@ -3,10 +3,9 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
-  /* background: rgb(232,238,242);
-  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%); */
-  background: #233C62;
-
+  border-bottom: 1px ridge rgb(53, 53, 53);
+  background: rgb(57,87,133);
+  background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
 }
 
 header a {
@@ -45,14 +44,17 @@ nav {
   position: absolute;
   right: 0;
   top: 70px;
-  height: 500px;
+  height: 80vh;
   width: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   z-index: 10;
-  opacity: 90%;
+  background: rgb(100,117,165);
+  background: linear-gradient(90deg, rgba(100,117,165,1) 0%, rgba(76,88,124,1) 100%);
+  border-radius: 10px;
+  transition: 1s;
 }
 
 .header-right {
