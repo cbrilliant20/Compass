@@ -4,8 +4,6 @@ import { useHistory } from "react-router-dom"
 import { postTrip } from "../../services/trips"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faWindowClose} from "@fortawesome/free-solid-svg-icons"
-import Trips from "../Trips/Trips"
-
 
 const TripCreate = (props) => {
   const [formData, setFormData] = useState({
@@ -18,7 +16,6 @@ const TripCreate = (props) => {
   const { name, location, date_start, date_end, img_url } = formData
   const [trips, setTrips] = useState([])
   const history = useHistory
-  const {trip} = props
   const [showForm, setShowForm] = useState(false)
 
   const tripsCreate = async (formData) => {
@@ -39,14 +36,8 @@ const TripCreate = (props) => {
   window.location.reload()
 }
 
-// let form
-// if (showForm) {
-//   form = <Trips />
-// }
-
-
   return (
-    <div className="wrapper">
+    <div className="wrapper" >
     <form className="trip-create-form"
     onSubmit={(e) => {
         e.preventDefault();
@@ -58,11 +49,11 @@ const TripCreate = (props) => {
       <input type="text" placeholder="Start Date"name="date_start" value={date_start} onChange={handleChange} />
       <input type="text" name="date_end" placeholder="End Date" value={date_end} onChange={handleChange} />
       <input type="text" name="img_url" placeholder="Image URL" value={img_url} onChange={handleChange} />
+        <div className="trip-create-form-buttons">
         <button>Add Trip</button>
-        {/* <FontAwesomeIcon icon={faWindowClose} className="close-button" onClick={() => setShowForm(!showForm)}/> */}
-        
+        <FontAwesomeIcon icon={faWindowClose} className="close-button" onClick={refreshPage} />
+        </div>
       </form>
-      {/* {form} */}
       </div>
   )
 }

@@ -1,6 +1,8 @@
 import "./TripEdit.css"
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWindowClose} from "@fortawesome/free-solid-svg-icons"
 
 const TripEdit = (props) => {
   const [formData, setFormData] = useState({
@@ -38,6 +40,9 @@ const TripEdit = (props) => {
 			[name]: value,
 		}));
 	};
+  const refreshPage = () => {
+    window.location.reload()
+  }
 
   return (
     <div className="wrapper">
@@ -52,7 +57,10 @@ const TripEdit = (props) => {
       <input type="text" name="date_start" placeholder="Start Date" value={date_start} onChange={handleChange} />
       <input type="text" name="date_end" placeholder="End Date" value={date_end} onChange={handleChange} />
       <input type="text" name="img_url" placeholder="Image URL" value={img_url} onChange={handleChange} />
-    <button>Save</button>
+      <div className="trip-edit-form-buttons">
+        <button>Save</button>
+        <FontAwesomeIcon icon={faWindowClose} className="close-button" onClick={refreshPage} />
+</div>
       </form>
       </div>
   )

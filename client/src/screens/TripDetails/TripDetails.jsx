@@ -42,9 +42,9 @@ const TripDetails = (props) => {
 
           </div>
           <FontAwesomeIcon className="edit-icon" icon={faEdit} onClick={() => setShowEditForm(!showEditForm)} />
-          {form}
+          
       </div>
-      
+      {form}
       
       <div className="itinerary-container">
         <h3>Upcoming Itinerary</h3>

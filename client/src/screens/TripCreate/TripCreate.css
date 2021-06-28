@@ -9,11 +9,20 @@
 }
 
 .trip-create-form {
+  /* position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%); */
   position: absolute;
   position: fixed;
-  top: 25%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,8 +30,8 @@
   border-radius: 10px;
   background: rgb(131,170,199);
   background: linear-gradient(90deg, rgba(131,170,199,1) 0%, rgba(120,155,181,1) 100%);
-  width: 50%;
-  height: 60vh;
+  width: 45%;
+  height: 65vh;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
   z-index: 200;
   /* filter: none; */
@@ -49,8 +58,7 @@ font-size: 35px;
 .trip-create-form button {
   height: 40px;
   width: 150px;
-  margin: 5px 0;
-  background-color: #77B6EA;
+  /* margin: 5px 0; */
   border: none;
   border-radius: 10px;
   box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
@@ -59,4 +67,20 @@ font-size: 35px;
 
 .trip-create-form h3 {
   font-size: 36px;
+}
+
+.trip-create-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.close-button {
+  font-size: 45px;
+  color: #87c1f0;
+}
+
+.close-button:hover {
+  filter: brightness(120%);
 }
