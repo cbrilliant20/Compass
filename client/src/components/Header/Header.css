@@ -3,8 +3,10 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
-  background: rgb(232,238,242);
-  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%);
+  /* background: rgb(232,238,242);
+  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%); */
+  background: #233C62;
+
 }
 
 header a {

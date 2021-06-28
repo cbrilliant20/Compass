@@ -10,9 +10,13 @@ export const getOneItinerary  = async (id) => {
 	return resp.data;
 };
 
-export const postItinerary  = async (itineraryData) => {
+export const postItinerary = async (itineraryData) => {
+  try{
 	const resp = await api.post('/itineraries', { itinerary: itineraryData });
-	return resp.data;
+    return resp.data;
+  } catch(error){
+    throw error
+  }
 };
 
 export const putItinerary  = async (id, itineraryData) => {

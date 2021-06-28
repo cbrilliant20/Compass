@@ -11,18 +11,23 @@
 
 .layout-header {
   grid-area: header;
-  background: rgb(232,238,242);
-  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%);
-}
+  /* background: rgb(210,213,215); */
+   /* background: linear-gradient(90deg, rgba(210,213,215,1) 0%, rgba(191,193,194,1) 100%); */
+   /* background: #233C62; */
+  }
 
 .layout-children {
   grid-area: main;
-  background: rgb(232,238,242);
-background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%);
+  background: rgb(210,213,215);
+  background: linear-gradient(90deg, rgba(210,213,215,1) 0%, rgba(191,193,194,1) 100%);
+  background: #233C62;
+
 }
 
 .layout-footer {
-  grid-area: footer;
+  /* grid-area: footer;
   background: rgb(232,238,242);
-background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%);
+background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%); */
+/* background: #233C62; */
+
 }

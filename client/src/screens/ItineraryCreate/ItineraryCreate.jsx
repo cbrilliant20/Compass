@@ -45,7 +45,7 @@ const ItineraryCreate = (props) => {
       <input type="text" name="name" placeholder="Name" value={name} onChange={handleChange} />
       <input type="text" name="location" placeholder="Location" value={location} onChange={handleChange} />
       <input type="text" name="date_start" placeholder="Start Date" value={date_start} onChange={handleChange} />
-      <button>Save</button>
+      <button type="submit">Save</button>
   </form>
   )
 }

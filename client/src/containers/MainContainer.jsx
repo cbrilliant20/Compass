@@ -75,8 +75,12 @@ export const MainContainer = (props) => {
   const itineraryDelete = async (id) => {
     await deleteItinerary(id)
     setItineraries((prevState) => prevState.filter((itinerary) => itinerary.id !== id))
+    refreshPage()
   }
 
+  const refreshPage = () => {
+    window.location.reload()
+  }
   return (
     <div>
       <Switch>

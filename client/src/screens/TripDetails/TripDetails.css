@@ -58,19 +58,19 @@
   border: 1px solid grey;
 }
 
-.trip-card-content {
+.trip-details-card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.trip-img {
+.trip-details-img {
   height: 375px;
   width: 375px;
   border: 1px solid grey;
 }
 
-.trip-card-text{
+.trip-details-card{
   display: flex;
   flex-direction: column;
   text-align: left;

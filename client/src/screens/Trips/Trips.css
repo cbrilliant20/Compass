@@ -10,8 +10,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-flex-wrap: wrap;
-position: relative;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .trips-header {
@@ -24,24 +24,28 @@ position: relative;
   height: 500px;
   width: 375px;
   background-color: #C7D3DD;
-  margin: 30px 50px;
+  margin: 30px 10px;
   border-radius: 20px;
-  border: 1px solid #C7D3DD;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  background: #F5F5ED;
+  color: #7B717B;
 }
 
 .trip-card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 1.8;
 }
 
 .trip-img {
   height: 375px;
   width: 375px;
+  background-size: cover;  
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 1px solid #C7D3DD;
+  border-bottom: none;
+  background: black;
 }
 
 .trip-card-text{
@@ -63,9 +67,12 @@ position: relative;
 
 .details-buttons button {
   height: 40px;
-  width: 70px;
+  width: 90px;
   margin: 5px 0;
   background-color: #77B6EA;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
 }
 
 .delete-button {

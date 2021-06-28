@@ -1,9 +1,9 @@
 footer {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  /* align-items: center; 
   background: rgb(232,238,242);
-  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%);
+  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%); */
 
 }
 
