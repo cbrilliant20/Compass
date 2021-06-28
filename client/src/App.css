@@ -17,5 +17,5 @@
 }
 
 input:active{
-  background-color: rgb(218, 228, 220);
+  background-color: rgb(218, 228, 220) !important;
 }
