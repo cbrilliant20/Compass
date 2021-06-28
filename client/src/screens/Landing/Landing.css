@@ -1,5 +1,6 @@
 .landing-page{
   color: white;
+  height: 100vh;
 }
 
 video {
@@ -25,8 +26,12 @@ video {
 }
 
 .landing-header {
-  background-color: none;
-  color: rgb(153, 207, 207);
+  color: inherit;
+  height: 90px;
+  background: none;
+  display: flex;
+  align-items: center;
+
 
 }
 
@@ -35,7 +40,9 @@ video {
   align-items: center;
   justify-content: left;
   margin-left: 50px;
-  height: 70px;
+  font-size: 20px !important;
+  letter-spacing: 2px;
+
 }
 
 .landing-logo * {
@@ -67,7 +74,8 @@ video {
   height: 50px;
 }
 
-.landing-span {
-  color: rgb(153, 207, 207);
-  
+.content a {
+  text-decoration: none;
+  color: inherit;
 }
+
