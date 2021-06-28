@@ -18,7 +18,6 @@ export const MainContainer = (props) => {
     const fetchTrips = async () => {
       const tripList = await getAllTrips()
       setTrips(tripList)
-      
     }
     if (currentUser) {
       fetchTrips()
@@ -41,8 +40,8 @@ export const MainContainer = (props) => {
     // history.push("/trips")
   }
 
-  const itinerariesCreate = async (formData) => {
-    const itineraryItem = await postItinerary(formData)
+  const itinerariesCreate = async (id, formData) => {
+    const itineraryItem = await postItinerary(id, formData)
     setItineraries((prevState) => [...prevState, itineraryItem])
     // history.push("/trips")
   }

@@ -8,14 +8,15 @@ import TripCreate from "../TripCreate/TripCreate"
 
 const Trips = (props) => {
   const [showForm, setShowForm] = useState(false)
-
+  const { trips, tripDelete } = props
+  
   let form
   if (showForm) {
     form = <TripCreate />
   }
 
 
-  const { trips, tripDelete } = props
+
 
   console.log(trips)
   return(

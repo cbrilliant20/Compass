@@ -10,8 +10,8 @@ class ItinerariesController < ApplicationController
   end
 
   def create
-    @itinerary = Itinerary.new(itinerary_params)
-    # @itinerary.user = @current_user
+    @trip = Trip.find(params[:trip_id])
+    @itinerary = Itinerary.where(trip_id: @trip.id).new(itinerary_params)
 
     if @itinerary.save
       render json: @itinerary, status: :created
@@ -38,6 +38,6 @@ class ItinerariesController < ApplicationController
     end
 
     def itinerary_params
-      params.require(:itinerary).permit(:name, :location, :date_start, :date_end, :trip_id)
+      params.require(:itinerary).permit(:name, :location, :date_start, :trip_id)
     end
 end

@@ -52,7 +52,7 @@ const TripDetails = (props) => {
 
       )
       )}
-        <ItineraryCreate />
+          <ItineraryCreate itinerariesCreate={itinerariesCreate} id={id}/>
         </div>
         </div>
       </div>

@@ -13,14 +13,14 @@ const ItineraryCreate = (props) => {
   const { name, location, date_start } = formData
   const [itineraries, setItineraries] = useState([])
   const history = useHistory
+  const {itinerariesCreate, id} = props
 
-
-  const itineraryCreate = async (formData) => {
-    const itineraryItem = await postItinerary(formData)
-    setItineraries((prevState) => [...prevState, itineraryItem])
-    // history.push("/trips")
-    refreshPage()
-  }
+  // const itineraryCreate = async (formData) => {
+  //   const itineraryItem = await postItinerary(formData)
+  //   setItineraries((prevState) => [...prevState, itineraryItem])
+  //   // history.push("/trips")
+  //   refreshPage()
+  // }
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -40,7 +40,7 @@ const ItineraryCreate = (props) => {
     <form className="itinerary-form"
     onSubmit={(e) => {
         e.preventDefault();
-        itineraryCreate(formData);
+        itinerariesCreate(id, formData);
   }}>
       <input type="text" name="name" placeholder="Name" value={name} onChange={handleChange} />
       <input type="text" name="location" placeholder="Location" value={location} onChange={handleChange} />
