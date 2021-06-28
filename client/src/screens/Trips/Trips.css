@@ -23,9 +23,11 @@ position: relative;
 .trip-card {
   height: 500px;
   width: 375px;
-  background-color: grey;
+  background-color: #C7D3DD;
   margin: 30px 50px;
-  border: 1px solid grey;
+  border-radius: 20px;
+  border: 1px solid #C7D3DD;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
 }
 
 .trip-card-content {
@@ -36,8 +38,10 @@ position: relative;
 
 .trip-img {
   height: 375px;
-  width: 370px;
-  border: 1px solid grey;
+  width: 375px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid #C7D3DD;
 }
 
 .trip-card-text{
@@ -61,6 +65,7 @@ position: relative;
   height: 40px;
   width: 70px;
   margin: 5px 0;
+  background-color: #77B6EA;
 }
 
 .delete-button {
@@ -68,3 +73,7 @@ position: relative;
   width: 70px;
 }
 
+.add-icon {
+width: 35px !important;
+margin: 0 20px;
+}

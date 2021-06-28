@@ -1,12 +1,22 @@
 import "./Nav.css"
 import { Link } from "react-router-dom"
+import { removeToken } from "../../services/auth"
 
-const Nav = () => {  
+const Nav = (props) => {
+  const { currentUser, handleLogout} = props
+
+  // const handleLogout = () => {
+  //   setCurrentUser(null);
+  //   localStorage.removeItem('authToken');
+  //   removeToken();
+  // };
+  
+
   return (
     <nav>
       <Link to="/trips">Trips</Link>
       <Link to="/resources">Resources</Link>
-      <h3>Logout</h3>
+      <Link to="/" onClick={handleLogout}>Logout</Link>
     </nav>
   )
 }

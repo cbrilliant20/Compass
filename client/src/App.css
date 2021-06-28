@@ -2,12 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 .App {
   text-align: center;
+  color: #37393A;
+  background-color: #E8EEF2;
 }
 
 .svg-inline--fa.fa-w-16 {
-  height: 5em;
+  height: 1em;
+  margin: 0 7px;
 }

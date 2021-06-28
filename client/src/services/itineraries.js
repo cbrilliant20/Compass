@@ -5,10 +5,10 @@ export const getAllItineraries = async () => {
 	return resp.data;
 };
 
-// export const getOneItinerary  = async (id) => {
-// 	const resp = await api.get(`/itineraries/${id}`);
-// 	return resp.data;
-// };
+export const getOneItinerary  = async (id) => {
+	const resp = await api.get(`/itineraries/${id}`);
+	return resp.data;
+};
 
 export const postItinerary  = async (itineraryData) => {
 	const resp = await api.post('/itineraries', { itinerary: itineraryData });
@@ -16,7 +16,7 @@ export const postItinerary  = async (itineraryData) => {
 };
 
 export const putItinerary  = async (id, itineraryData) => {
-	const resp = await api.put(`/itineraries/${id}`, { itinerary: itineraryData });
+	const resp = await api.put(`/itinerary/${id}`, { itinerary: itineraryData });
 	return resp.data;
 };
 

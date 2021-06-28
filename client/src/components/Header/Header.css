@@ -2,11 +2,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: grey;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+  background: rgb(232,238,242);
+  background: linear-gradient(90deg, rgba(232,238,242,1) 0%, rgba(217,221,224,1) 100%);
 }
 
 header a {
   text-decoration: none;
+  color: inherit;
 }
 
 .logo {
@@ -14,7 +17,7 @@ header a {
   justify-content: center;
   align-items: center;
   margin-left: 50px;
-  color: black;
+
 }
 
 .logo * {
@@ -41,7 +44,6 @@ nav {
   right: 0;
   top: 70px;
   height: 500px;
-  background-color: blanchedalmond;
   width: 140px;
   display: flex;
   flex-direction: column;

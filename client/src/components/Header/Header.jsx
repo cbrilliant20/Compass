@@ -9,11 +9,11 @@ import { useState } from "react"
 
 const Header = (props) => {
   const [showMenu, setShowMenu] = useState(false)
-  const { currentUser } = props
+  const { currentUser, handleLogout } = props
   
   let nav
   if (showMenu) {
-    nav = <Nav />
+    nav = <Nav currentUser={currentUser} handleLogout={handleLogout}/>
   }
 
   return (

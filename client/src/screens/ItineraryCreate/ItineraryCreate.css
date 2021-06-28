@@ -3,7 +3,7 @@
     display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
-  padding: 30px;
+  padding: 20px;
   /* grid-template-columns: span 2; */
   background-color: green;
   border-radius: 2rem;
@@ -17,10 +17,12 @@
   border: none;
   font-size: 14px;
   outline: none;
+  margin: 5px;
 }
 
 .itinerary-form button {
   border-radius: 20px;
   outline: none;
   border: none;
+  height: 30px;
 }

@@ -1,5 +1,4 @@
 import "./ItineraryCreate.css"
-
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { postItinerary } from "../../services/itineraries"
@@ -9,8 +8,8 @@ const ItineraryCreate = (props) => {
     name: '',
     location: '',
     date_start: '',
-
   })
+
   const { name, location, date_start } = formData
   const [itineraries, setItineraries] = useState([])
   const history = useHistory
