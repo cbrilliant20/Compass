@@ -1,6 +1,5 @@
 import "./Nav.css"
 import { Link } from "react-router-dom"
-import { removeToken } from "../../services/auth"
 
 const Nav = (props) => {
   const { currentUser, handleLogout} = props

@@ -12,8 +12,8 @@
 .layout-header {
   grid-area: header;
   background: rgb(57,87,133);
-  background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
-  }
+  background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);  
+}
 
 .layout-children {
   grid-area: main;

@@ -2,8 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
-  border-bottom: 1px ridge rgb(53, 53, 53);
+  border-bottom: 1px ridge #dddddd;
   background: rgb(57,87,133);
   background: linear-gradient(90deg, rgba(57,87,133,1) 0%, rgba(35,60,98,1) 100%);
 }
@@ -40,6 +39,13 @@ header a {
   height: 40px;
   position: static;
   margin-left: 30px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.burger-icon:hover{
+  color: #77B6EA;
+  filter: brightness(120%);
 }
 
 nav {

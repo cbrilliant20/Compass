@@ -1,0 +1,8 @@
+nav a {
+  border-bottom: 1px solid transparent;
+  transition: .5s;
+}
+
+nav a:hover{
+border-bottom: 1px solid #dddddd;
+}
