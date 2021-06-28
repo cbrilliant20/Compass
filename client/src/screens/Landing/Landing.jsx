@@ -2,7 +2,7 @@ import "./Landing.css"
 
 import { faDraftingCompass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import cove from "../../Assets/cove.mp4"
+import cove from "../../Assets/cove.mp4"
 import { Link } from "react-router-dom"
 
 const Landing = () => {
@@ -18,8 +18,7 @@ const Landing = () => {
       </div>
       <video className="video" muted loop autoPlay >
         <source
-          src="#"
-          // {cove}
+          src={cove}
           type="video/mp4" />
       </video>
       <div className="overlay"></div>
