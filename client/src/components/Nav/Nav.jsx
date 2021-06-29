@@ -4,13 +4,6 @@ import { Link } from "react-router-dom"
 const Nav = (props) => {
   const { currentUser, handleLogout} = props
 
-  // const handleLogout = () => {
-  //   setCurrentUser(null);
-  //   localStorage.removeItem('authToken');
-  //   removeToken();
-  // };
-  
-
   return (
     <nav>
       <Link to="/trips">Trips</Link>

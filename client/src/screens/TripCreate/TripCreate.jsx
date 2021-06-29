@@ -15,8 +15,6 @@ const TripCreate = (props) => {
   })
   const { name, location, date_start, date_end, img_url } = formData
   const [trips, setTrips] = useState([])
-  const history = useHistory
-  const [showForm, setShowForm] = useState(false)
 
   const tripsCreate = async (formData) => {
     const tripItem = await postTrip(formData)

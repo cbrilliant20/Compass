@@ -12,8 +12,6 @@ const Resources = () => {
       </div>
       <h1>Travel Resources</h1>
       <div className="resource-card-container">
-        {/* <h2>Flights</h2> */}
-        
           {resources.map((item) => (
             <div className="resource-card">
               <img src={item.imgUrl} alt="" className="resource-card-img" />
@@ -25,7 +23,7 @@ const Resources = () => {
           ))}
 
         </div>
-        
+
       </div>
   )
 }

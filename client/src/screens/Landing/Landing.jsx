@@ -1,5 +1,4 @@
 import "./Landing.css"
-
 import { faDraftingCompass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import cove from "../../Assets/cove.mp4"

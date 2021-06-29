@@ -15,10 +15,6 @@ const Trips = (props) => {
     form = <TripCreate />
   }
 
-
-
-
-  console.log(trips)
   return(
     <div className="trips-container">
       <div className="trips-header">
@@ -27,8 +23,8 @@ const Trips = (props) => {
       </div>
       {form}
       <div className="trips">
-        
-        
+
+
       {trips.map((trip) => (
         <div className="trip-card">
           <img src={trip.img_url} className="trip-img" />
@@ -44,11 +40,11 @@ const Trips = (props) => {
             </Link>
             <button className="delete-button" onClick={() => tripDelete(trip.id)}>Delete</button>
               </div>
-          </div> 
+          </div>
         </div>
       ))}
         </div>
-      
+
       </div>
   )
 }
