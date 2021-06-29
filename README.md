@@ -110,15 +110,15 @@ https://drive.google.com/file/d/1rTTJjTtk24KgHG_2kAMT81wvHILBkx9d/view?usp=shari
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Controllerss        |    H     |     2 hrs      |      TBD      |     TBD     |
-| Migrations          |    H     |     2 hrs      |      TBD      |     TBD     |
-| Models              |    H     |     2 hrs      |      TBD      |     TBD     |
-| BE Route            |    H     |     2 hrs      |      TBD      |     TBD     |
-| Component Structure |    H     |     1 hrs      |      TBD      |     TBD     |
-| Screens             |    H     |     8 hrs      |      TBD      |     TBD     |
-| Forms               |    H     |     4 hrs      |      TBD      |     TBD     |
-| API Calls           |    H     |     4 hrs      |      TBD      |     TBD     |
-| FE Routes           |    H     |     3 hrs      |      TBD      |     TBD     |
-| Resources           |    H     |     3 hrs      |      TBD      |     TBD     |
-| CSS                 |    H     |     8 hrs      |      TBD      |     TBD     |
-| TOTAL               |          |     39 hrs     |      TBD      |     TBD     |
+| Controllerss        |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Migrations          |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Models              |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| BE Route            |    H     |     2 hrs      |     8 hrs     |    8 hrs    |
+| Component Structure |    H     |     1 hrs      |     2 hrs     |    2 hrs    |
+| Screens             |    H     |     8 hrs      |     8 hrs     |    8 hrs    |
+| Forms               |    H     |     4 hrs      |     3 hrs     |    3 hrs    |
+| API Calls           |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
+| FE Routes           |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Resources           |    H     |     3 hrs      |     4 hrs     |    4 hrs    |
+| CSS                 |    H     |     8 hrs      |     8 hrs     |    8 hrs    |
+| TOTAL               |          |     39 hrs     |    46 hrs     |   46 hrs    |

@@ -15,11 +15,7 @@ const Landing = () => {
         </div>
       </div>
       <video className="video" muted loop autoPlay>
-        <source
-          // src="https://player.vimeo.com/video/484387300?title=0&portrait=0&byline=0&autoplay=1"
-          src-={cove}
-          type="video/mp4"
-        />
+        <source src={cove} type="video/mp4" />
       </video>
       <div className="overlay"></div>
       <div className="content">
