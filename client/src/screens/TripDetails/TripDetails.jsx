@@ -6,7 +6,7 @@ import ItineraryCreate from "../ItineraryCreate/ItineraryCreate"
 import TripEdit from "../TripEdit/TripEdit"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEdit} from "@fortawesome/free-solid-svg-icons"
-
+import { Link } from "react-router-dom"
 const TripDetails = (props) => {
   const [trip, setTrip] = useState(null)
   const {id} = useParams()
@@ -28,6 +28,11 @@ const TripDetails = (props) => {
   
   return (
     <div>
+      <div className="breadcrumb"><Link to='/trips'>Home&nbsp;{">>>"}&nbsp;</Link>
+      <span className="cur-page">Trip Details </span>
+      </div>
+      
+      
       <h1 className="details-title">{trip?.name}</h1>
       <div className="trip-details-container">
       

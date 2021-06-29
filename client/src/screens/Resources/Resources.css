@@ -62,3 +62,16 @@
   color: inherit;
   font-size: 16px;
 }
+
+.resources-container .breadcrumb {
+  position: absolute;
+  left: 12% !important;
+  text-decoration: none;
+  color: inherit;
+  margin-top: -30px;
+}
+
+.resources-container .breadcrumb a{
+  text-decoration: none;
+  color: inherit;
+}

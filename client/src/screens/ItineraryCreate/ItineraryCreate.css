@@ -1,6 +1,6 @@
 .itinerary-form {
-  width: 425px;
-    display: grid;
+  width: 95%;    
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   padding: 20px;
@@ -23,7 +23,7 @@ background: linear-gradient(90deg, rgba(218,228,220,1) 0%, rgba(185,193,186,1) 1
   font-size: 14px;
   outline: none;
   margin: 5px;
-  width: fill;
+  width: 90%;
   background: rgb(218, 228, 220);
   color: black;
   border: 1px solid #949292;
@@ -39,6 +39,6 @@ background: linear-gradient(90deg, rgba(218,228,220,1) 0%, rgba(185,193,186,1) 1
   outline: none;
   border: none;
   height: 30px;
-  width: fill;
+  width: 90%;
   margin: 5px;
 }

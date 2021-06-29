@@ -1,12 +1,15 @@
 import "./Resources.css"
 import { resources } from "../../Assets/ResourcesData"
-
+import { Link } from "react-router-dom"
 
 const Resources = () => {
 
 
   return (
     <div className="resources-container">
+      <div className="breadcrumb"><Link to='/trips'>Home&nbsp;{">>>"}&nbsp;</Link>
+      <span className="cur-page">Travel Resources</span>
+      </div>
       <h1>Travel Resources</h1>
       <div className="resource-card-container">
         {/* <h2>Flights</h2> */}

@@ -6,28 +6,30 @@ import cove from "../../Assets/cove.mp4"
 import { Link } from "react-router-dom"
 
 const Landing = () => {
-
-
   return (
     <div className="landing-page">
-     <div className="landing-header">
-      <div className="landing-logo">
+      <div className="landing-header">
+        <div className="landing-logo">
           <FontAwesomeIcon className="logo-icon" icon={faDraftingCompass} />
           <h1>COMPASS</h1>
         </div>
       </div>
-      <video className="video" muted loop autoPlay >
+      <video className="video" muted loop autoPlay>
         <source
-          src={cove}
-          type="video/mp4" />
+          // src="https://player.vimeo.com/video/484387300?title=0&portrait=0&byline=0&autoplay=1"
+          src-={cove}
+          type="video/mp4"
+        />
       </video>
       <div className="overlay"></div>
       <div className="content">
-        <h2>Every Explorer Needs A <span className="landing-span">Compass</span></h2>
+        <h2>
+          Every Explorer Needs A <span className="landing-span">Compass</span>
+        </h2>
         <h3>Sign In below to start planning your next adventure.</h3>
-        <Link to='/login'>
+        <Link to="/login">
           <button>Sign In</button>
-          </Link>
+        </Link>
       </div>
     </div>
   )

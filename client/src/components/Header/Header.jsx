@@ -27,7 +27,7 @@ const Header = (props) => {
       <div className="header-right">
       {currentUser ? (
         <>
-          <p>{currentUser.username}</p>
+          <p>Hello {currentUser.username}</p>
           </>
       ) : (
           <Link to='/login'><button className="login-button">Login</button></Link>

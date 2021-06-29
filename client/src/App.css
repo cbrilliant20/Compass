@@ -19,3 +19,11 @@
 input:active{
   background-color: rgb(218, 228, 220) !important;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+ {
+  -webkit-box-shadow: 0 0 0 30px rgb(218, 228, 220)
+  inset !important;
+ }

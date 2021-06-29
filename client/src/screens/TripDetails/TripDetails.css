@@ -1,25 +1,29 @@
 .trip-details-container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 20px 30px;
+
 }
 
 .details-title{
   margin: 20px 0;
   font-size: 50px;
+  text-align: center;
 }
 
 .itinerary-container {
-  width: 450px;
+  width: 40%;
   background: rgb(100,117,165);
   background: linear-gradient(90deg, rgba(100,117,165,1) 0%, rgba(76,88,124,1) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px 20px;
   min-height: 375px;
   border-radius: 10px;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5); 
+  position: relative;
 }
 
 .itinerary-container h3 {
@@ -28,10 +32,10 @@
 }
 
 .itinerary-card {
-  width: 425px;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 15px;
   padding: 20px;
   background: rgb(123,146,159);
   background: linear-gradient(90deg, rgba(123,146,159,1) 0%, rgba(86,110,124,1) 100%);
@@ -39,34 +43,34 @@
   margin: 10px;
   text-align: left;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
-  
+  position: relative
 }
 
 .itinerary-card * {
   height: 30px;
-  padding: 5px 10px;
-  border-radius: 20px;
+  padding: 3px 3px;
+  border-radius: 10px;
   border: none;
   font-size: 16px;
   outline: none;
+  width: 90%;
 }
 
+.itinerary-card p {
+  line-height: 1.1;
+  margin: 0 3px;
+}
 .itinerary-card button {
   border-radius: 20px;
-  outline: none;
-  border: none;
-  margin: 5px;
-  width: fill;
-
 }
 
 .trip-details-card {
   height: 500px;
-  width: 375px;
+  width: 40%;
   background: rgb(100,117,165);
   background: linear-gradient(90deg, rgba(100,117,165,1) 0%, rgba(76,88,124,1) 100%);
-  margin: 20px 0;
-  border-radius: 20px;
+  margin: 20px 30px;
+  border-radius: 10px;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -78,13 +82,14 @@
   padding-left: 10px;
   line-height: 2;
   text-align: left;
+  font-size: 20px;
 }
 
 .trip-details-img {
   height: 375px;
-  width: 375px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .trip-details-card button{
@@ -95,7 +100,7 @@
 
 .edit-icon {
   position: absolute;
-  right: 20px;
+  right: 50px;
   bottom: 50px;
   font-size: 30px;
   cursor: pointer;
@@ -105,4 +110,22 @@
 .edit-icon:hover{
   color: #77B6EA;
   filter: brightness(120%);
+}
+
+.breadcrumb {
+  position: absolute;
+  left: 10%;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  margin-top: -15px;
+}
+
+.breadcrumb a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cur-page {
+  color: #77B6EA;
 }
